@@ -15,7 +15,7 @@ FoamFile
 }
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-3
+5
 (
     center
     {
@@ -28,15 +28,29 @@ FoamFile
     {
         type            wall;
         inGroups        List<word> 1(wall);
-        nFaces          60;
+        nFaces          40;
         startFace       780;
     }
     frontAndBack
     {
         type            empty;
         inGroups        List<word> 1(empty);
-        nFaces          800;
-        startFace       840;
+        nFaces          0;
+        startFace       820;
+    }
+    frontAndBack_pos
+    {
+        type            wedge;
+        inGroups        List<word> 1(wedge);
+        nFaces          400;
+        startFace       820;
+    }
+    frontAndBack_neg
+    {
+        type            wedge;
+        inGroups        List<word> 1(wedge);
+        nFaces          400;
+        startFace       1220;
     }
 )
 
