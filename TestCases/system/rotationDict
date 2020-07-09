@@ -22,9 +22,13 @@ rotationVector (1 0 0);
 //originVector (0 0.15 0); //offset
 originVector (0 0 0); // origin
 
+wedgeAngle 10;
+
 // revolve option
 // 0 = old and default mode, points are projected on wedges
 // 1 = points are revolved
+
+
 revolve 0;
 
 
