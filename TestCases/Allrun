@@ -9,6 +9,7 @@ rm -r constant
 rm log*
 runApplication foamDictionary -entry writeFormat -set binary system/controlDict
 runApplication blockMesh
-runApplication makeAxialMesh -overwrite
-runApplication collapseEdges -overwrite
-runApplication checkMesh
+
+#  runApplication makeAxialMesh -overwrite
+#  runApplication collapseEdges -overwrite
+#  runApplication checkMesh
